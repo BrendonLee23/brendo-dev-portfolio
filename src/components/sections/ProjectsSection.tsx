@@ -11,7 +11,7 @@ export const ProjectsSection = () => {
       <div className="container mx-auto">
         <div className="max-w-6xl mx-auto">
           {/* Section Title */}
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 title-glow">
             {data.projects.title}
           </h2>
           

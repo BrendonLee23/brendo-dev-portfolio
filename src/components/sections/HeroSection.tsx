@@ -13,21 +13,21 @@ export const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 lg:px-8">
+    <section id="home" className="min-h-screen flex items-center justify-center px-4 lg:px-8 hero-bg">
       <div className="container mx-auto text-center">
         <div className="max-w-4xl mx-auto">
           {/* Greeting */}
-          <p className="text-muted-foreground text-lg mb-2 font-mono">
+          <p className="text-muted-foreground text-lg mb-2 font-mono animate-fade-in">
             {data.hero.greeting}
           </p>
           
           {/* Name */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-hero bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-hero bg-clip-text text-transparent title-float">
             {data.hero.name}
           </h1>
           
           {/* Role */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-primary mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-primary mb-6 title-glow">
             {data.hero.role}
           </h2>
           

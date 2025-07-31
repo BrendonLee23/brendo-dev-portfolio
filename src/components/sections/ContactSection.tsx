@@ -36,7 +36,7 @@ export const ContactSection = () => {
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto text-center">
           {/* Section Title */}
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 title-glow">
             {data.contact.title}
           </h2>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
