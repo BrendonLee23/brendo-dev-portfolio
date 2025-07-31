@@ -175,6 +175,14 @@ Cores neutras e profissionais para modo claro/escuro
     animation: titleFloat 4s ease-in-out infinite;
   }
 
+  /* Animação de digitação */
+  .typing-animation {
+    overflow: hidden;
+    border-right: 3px solid hsl(var(--primary));
+    white-space: nowrap;
+    animation: typing 2s steps(12, end), blink-caret 1s step-end infinite, restart-typing 4s infinite;
+  }
+
   /* Animação de fundo hero */
   .hero-bg {
     position: relative;
@@ -247,5 +255,32 @@ Cores neutras e profissionais para modo claro/escuro
   }
   66% {
     transform: translateX(-15px) translateY(5px) rotate(-0.5deg);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: hsl(var(--primary));
+  }
+}
+
+@keyframes restart-typing {
+  0%, 50% {
+    width: 100%;
+  }
+  51%, 100% {
+    width: 0;
   }
 }

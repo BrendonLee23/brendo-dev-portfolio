@@ -17,7 +17,7 @@ export const HeroSection = () => {
       <div className="container mx-auto text-center">
         <div className="max-w-4xl mx-auto">
           {/* Greeting */}
-          <p className="text-muted-foreground text-lg mb-2 font-mono animate-fade-in">
+          <p className="text-muted-foreground text-lg mb-2 font-mono typing-animation">
             {data.hero.greeting}
           </p>
           
