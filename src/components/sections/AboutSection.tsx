@@ -36,19 +36,12 @@ export const AboutSection = () => {
             {/* Profile Image Area */}
             <div className="flex justify-center">
               <Card className="w-80 h-80 bg-gradient-card border-2 overflow-hidden">
-                <CardContent className="p-0 h-full flex flex-col">
-                  <div className="flex-1 overflow-hidden">
-                    <img 
-                      src="/lovable-uploads/487d7533-2a71-40ac-acad-2fc089818a6c.png" 
-                      alt="Brendo Moreira" 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-4 text-center bg-gradient-to-t from-background/95 to-transparent">
-                    <p className="text-sm text-muted-foreground font-medium">
-                      Desenvolvedor Full Stack
-                    </p>
-                  </div>
+                <CardContent className="p-0 h-full">
+                  <img 
+                    src="/lovable-uploads/3a160446-ce55-4fee-87e7-e8f340b60576.png" 
+                    alt="Brendo Moreira" 
+                    className="w-full h-full object-cover"
+                  />
                 </CardContent>
               </Card>
             </div>
