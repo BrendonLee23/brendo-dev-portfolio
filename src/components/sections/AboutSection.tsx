@@ -2,6 +2,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { CheckCircle } from 'lucide-react';
 
+
 export const AboutSection = () => {
   const { data } = useLanguage();
 
@@ -34,13 +35,17 @@ export const AboutSection = () => {
             
             {/* Profile Image Area */}
             <div className="flex justify-center">
-              <Card className="w-80 h-80 bg-gradient-card border-2">
-                <CardContent className="p-6 h-full flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                      <span className="text-4xl font-mono text-primary">&lt;BM /&gt;</span>
-                    </div>
-                    <p className="text-sm text-muted-foreground">
+              <Card className="w-80 h-80 bg-gradient-card border-2 overflow-hidden">
+                <CardContent className="p-0 h-full flex flex-col">
+                  <div className="flex-1 overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/487d7533-2a71-40ac-acad-2fc089818a6c.png" 
+                      alt="Brendo Moreira" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-4 text-center bg-gradient-to-t from-background/95 to-transparent">
+                    <p className="text-sm text-muted-foreground font-medium">
                       Desenvolvedor Full Stack
                     </p>
                   </div>
