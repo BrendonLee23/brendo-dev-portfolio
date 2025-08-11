@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Moon, Sun, Menu, X, Globe } from 'lucide-react';
+import { LanguageFlagIcon } from '@/components/ui/LanguageFlagIcon';
+
 
 export const Header = () => {
   const { data, language, toggleLanguage } = useLanguage();
@@ -12,6 +14,7 @@ export const Header = () => {
   const navItems = [
     { label: data.nav.home, href: '#home' },
     { label: data.nav.about, href: '#about' },
+    { label: data.nav.services, href: '#services' }, // Adicione esta linha
     { label: data.nav.skills, href: '#skills' },
     { label: data.nav.experience, href: '#experience' },
     { label: data.nav.projects, href: '#projects' },
@@ -58,7 +61,7 @@ export const Header = () => {
               onClick={toggleLanguage}
               className="text-muted-foreground hover:text-foreground"
             >
-              <Globe className="h-4 w-4 mr-1" />
+              <LanguageFlagIcon language={language} className="h-[23px] w-[20px] mr-1 rounded-sm shadow" />
               {language.toUpperCase()}
             </Button>
 

@@ -4,7 +4,8 @@ export const portfolioData = {
     nav: {
       home: "Início",
       about: "Sobre",
-      skills: "Habilidades", 
+      skills: "Habilidades",
+      services: "Serviços", // Adicione aqui
       experience: "Experiência",
       projects: "Projetos",
       education: "Formação",
@@ -36,7 +37,7 @@ export const portfolioData = {
           items: ["React.js", "TypeScript", "Tailwind CSS", "Next.js", "HTML5", "CSS3", "JavaScript"]
         },
         backend: {
-          title: "Back-end", 
+          title: "Back-end",
           items: ["Node.js", "Express.js", "Prisma ORM", "REST APIs", "JWT", "Bcrypt"]
         },
         database: {
@@ -46,6 +47,22 @@ export const portfolioData = {
         devops: {
           title: "DevOps & Ferramentas",
           items: ["Docker", "AWS", "Git", "GitHub", "Vercel", "Heroku"]
+        },
+        design: {
+          title: "Design & UX",
+          items: ["Figma", "Adobe XD", "UI/UX", "Prototipagem"]
+        },
+        testing: {
+          title: "Testes e Revisão",
+          items: ["Jest", "React Testing Library", "Revisão de Código", "Testes Automatizados"]
+        },
+        security: {
+          title: "Segurança",
+          items: ["OWASP", "Autenticação", "Autorização", "Criptografia", "HTTPS", "Helmet.js"]
+        },
+        methodologies: {
+          title: "Metodologias",
+          items: ["Scrum", "Kanban", "Agile", "Code Review", "TDD", "Clean Code"]
         }
       }
     },
@@ -110,14 +127,44 @@ export const portfolioData = {
         location: "Manaus, Amazonas - Brasil",
         languages: "Português (nativo), Inglês (fluente), Espanhol (básico)"
       }
+    },
+    services: {
+  title: "Serviços",
+  items: [
+    {
+      num: "1",
+      title: "Desenvolvimento de Aplicações Web",
+      description: "Criação de sistemas completos, como e-commerce, dashboards administrativos e plataformas de gestão. Tecnologias: React, Next.js, Vue.js, Node.js, etc.",
+      href: ""
+    },
+    {
+      num: "2",
+      title: "Desenvolvimento de APIs e Integrações",
+      description: "Construção de APIs RESTful e GraphQL para conectar sistemas e aplicações. Integração com serviços de terceiros (pagamentos, redes sociais, CRMs, etc.).",
+      href: ""
+    },
+    {
+      num: "3",
+      title: "Manutenção de Aplicações e Suporte Técnico",
+      description: "Correção de bugs, atualizações de software e suporte técnico contínuo para sistemas existentes.",
+      href: ""
+    },
+    {
+      num: "4",
+      title: "Automação de Processos e Bots",
+      description: "Desenvolvimento de bots para atendimento (chatbots, WhatsApp, Telegram). Automação de tarefas repetitivas (extração de dados, envio de e-mails, web scraping, etc.). Uso de RPA (Robotic Process Automation) para otimizar fluxos de trabalho.",
+      href: ""
     }
+  ]
+}
   },
   en: {
     nav: {
       home: "Home",
       about: "About",
       skills: "Skills",
-      experience: "Experience", 
+      services: "Services", // Adicione aqui
+      experience: "Experience",
       projects: "Projects",
       education: "Education",
       contact: "Contact"
@@ -158,6 +205,22 @@ export const portfolioData = {
         devops: {
           title: "DevOps & Tools",
           items: ["Docker", "AWS", "Git", "GitHub", "Vercel", "Heroku"]
+        },
+        design: {
+          title: "Design & UX",
+          items: ["Figma", "Adobe XD", "UI/UX", "Prototyping"]
+        },
+        testing: {
+          title: "Testing and Review",
+          items: ["Jest", "React Testing Library", "Code Review", "Automated Tests"]
+        },
+        security: {
+          title: "Security",
+          items: ["OWASP", "Authentication", "Authorization", "Cryptography", "HTTPS", "Helmet.js"]
+        },
+        methodologies: {
+          title: "Methodologies",
+          items: ["Scrum", "Kanban", "Agile", "Code Review", "TDD", "Clean Code"]
         }
       }
     },
@@ -222,6 +285,35 @@ export const portfolioData = {
         location: "Manaus, Amazonas - Brazil",
         languages: "Portuguese (native), English (fluent), Spanish (basic)"
       }
-    }
+    },
+    services: {
+    title: "Services",
+    items: [
+      {
+        num: "1",
+        title: "Web Application Development",
+        description: "Creation of complete systems, such as e-commerce, administrative dashboards and management platforms. Technologies: React, Next.js, Vue.js, Node.js, etc.",
+        href: ""
+      },
+      {
+        num: "2",
+        title: "API and Integration Development",
+        description: "Building RESTful and GraphQL APIs to connect systems and applications. Integration with third-party services (payments, social networks, CRMs, etc.).",
+        href: ""
+      },
+      {
+        num: "3",
+        title: "Application Maintenance and Technical Support",
+        description: "Bug fixes, software updates and ongoing technical support for existing systems.",
+        href: ""
+      },
+      {
+        num: "4",
+        title: "Process Automation and Bots",
+        description: "Development of bots for customer service (chatbots, WhatsApp, Telegram). Automation of repetitive tasks (data extraction, sending emails, web scraping, etc.). Use of RPA (Robotic Process Automation) to optimize workflows.",
+        href: ""
+      }
+    ]
+  },
   }
 };

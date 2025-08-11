@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Code, Database, Server, Settings } from 'lucide-react';
+import { CheckSquare, Code, Database, PenTool, Server, Settings, Shield, Clipboard } from 'lucide-react';
 
 export const SkillsSection = () => {
   const { data } = useLanguage();
@@ -11,6 +11,10 @@ export const SkillsSection = () => {
     backend: Server,
     database: Database,
     devops: Settings,
+    design: PenTool, // Novo ícone para Design & UX
+    testing: CheckSquare,
+    security: Shield,
+    methodologies: Clipboard
   };
 
   return (

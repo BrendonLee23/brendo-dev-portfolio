@@ -2,9 +2,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Mail, Phone, MapPin, Github, Linkedin, Languages } from 'lucide-react';
+import { useState } from 'react';
+import { ContactSheet } from '../contactSheet';
 
 export const ContactSection = () => {
   const { data } = useLanguage();
+    const [open, setOpen] = useState(false);
 
   const contactItems = [
     {
@@ -33,6 +36,7 @@ export const ContactSection = () => {
 
   return (
     <section id="contact" className="py-20 px-4 lg:px-8 bg-muted/50">
+            <ContactSheet open={open} onOpenChange={setOpen} />
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto text-center">
           {/* Section Title */}
@@ -83,25 +87,30 @@ export const ContactSection = () => {
                     <Button 
                       variant="gradient"
                       className="w-full"
-                      onClick={() => window.open(`mailto:${data.contact.info.email}`, '_blank')}
+                      onClick={() => setOpen(true)}
                     >
                       <Mail className="mr-2 h-4 w-4" />
                       Enviar E-mail
                     </Button>
-                    <Button 
-                      variant="outline" 
-                      className="w-full"
-                      onClick={() => window.open(`https://wa.me/5592982113979`, '_blank')}
-                    >
-                      <Phone className="mr-2 h-4 w-4" />
-                      WhatsApp
-                    </Button>
+                  <Button 
+                    variant="outline" 
+                    className="w-full"
+                    onClick={() => {
+                      const msg = encodeURIComponent(
+                        "Olá, tudo bem? Encontrei seu contato pelo portfólio e gostaria de conversar sobre um projeto. Podemos agendar uma call?"
+                      );
+                      window.open(`https://wa.me/5592982113979?text=${msg}`, '_blank');
+                    }}
+                  >
+                    <Phone className="mr-2 h-4 w-4" />
+                    WhatsApp
+                  </Button>
                   </div>
                   
                   {/* Social Links */}
                   <div className="flex justify-center space-x-4 pt-4 border-t border-border">
                     <a
-                      href="https://github.com/brendomoreira"
+                      href="https://github.com/BrendonLee23"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200"
@@ -109,7 +118,7 @@ export const ContactSection = () => {
                       <Github className="h-5 w-5" />
                     </a>
                     <a
-                      href="https://linkedin.com/in/brendomoreira"
+                      href="https://www.linkedin.com/in/brendo-moreira-dev"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200"

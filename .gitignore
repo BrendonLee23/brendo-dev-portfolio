@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+w
+
+
+
+# Ignore specific files
+# /src/lib/emailjs.ts 
