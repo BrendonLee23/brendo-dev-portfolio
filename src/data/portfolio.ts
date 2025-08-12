@@ -23,7 +23,7 @@ export const portfolioData = {
       title: "Sobre Mim",
       description: "Desenvolvedor Full Stack com foco em tecnologias modernas e boas práticas de desenvolvimento. Experiência em projetos do front-end ao back-end, sempre buscando código limpo e soluções eficientes.",
       highlights: [
-        "3+ anos de experiência em desenvolvimento web",
+        "4+ anos de experiência em desenvolvimento web",
         "Especialista em React.js e Node.js",
         "Experiência com TypeScript e banco de dados",
         "Conhecimento em DevOps e deploy de aplicações"
@@ -68,6 +68,7 @@ export const portfolioData = {
     },
     experience: {
       title: "Experiência Profissional",
+      description: "Aqui estão minhas principais experiências durante minha carreira como desenvolvedor.",
       items: [
         {
           company: "Freelancer",
@@ -79,6 +80,21 @@ export const portfolioData = {
             "Implementação de interfaces responsivas com React",
             "Integração com bancos de dados PostgreSQL"
           ]
+        },
+        {
+          company: "Driven Projects",
+          position: "Desenvolvedor Web Full Stack",
+          period: "Abr 2023 – Mai 2024"
+        },
+        {
+          company: "IT Works S/A",
+          position: "Desenvolvedor Full Stack",
+          period: "Mai 2024 – Presente"
+        },
+        {
+          company: "Lugenius",
+          position: "Desenvolvedor Full Stack",
+          period: "Junho 2025 – Presente"
         }
       ]
     },
@@ -103,18 +119,32 @@ export const portfolioData = {
       title: "Formação Acadêmica",
       items: [
         {
-          institution: "Driven Education",
-          course: "Bootcamp Desenvolvimento Full Stack",
-          period: "2021",
+          institution: "Cursos Livres de Programação",
+          course: "Formação Autodidata em Desenvolvimento",
+          period: "2020 - 2022",
           status: "Concluído",
-          description: "Formação intensiva em desenvolvimento web moderno"
+          description: "Participei de diversos cursos online e bootcamps, focando em lógica de programação, algoritmos, estruturas de dados, fundamentos web, APIs REST, bancos de dados e boas práticas de desenvolvimento. Aprimorei habilidades em JavaScript, TypeScript, React, Node.js e Git."
         },
         {
-          institution: "Universidade",
-          course: "Curso Superior em Andamento",
-          period: "Em andamento",
+          institution: "FIAP",
+          course: "Engenharia de Software",
+          period: "jan de 2023 – dez de 2023",
+          status: "Trancado",
+          description: "Graduação com foco em linguagens modernas, desenvolvimento web, segurança da informação, manipulação de dados, Python, Java, C#, metodologias ágeis e soluções em nuvem. Abordou OOP, blockchain, metaverso, soluções digitais e Quality Assurance. Curso trancado em dezembro de 2023."
+        },
+        {
+          institution: "Driven Education",
+          course: "Engenharia de Software",
+          period: "abr de 2023 – dez de 2023",
+          status: "Concluído",
+          description: "Formação intensiva (+1200h) com projetos práticos em React, Node.js, TypeScript e Prisma. Aprofundei fundamentos de engenharia de software, metodologias ágeis, testes, DevOps e bancos de dados relacionais e não relacionais."
+        },
+        {
+          institution: "Wyden",
+          course: "Bacharelado em Análise e Desenvolvimento de Sistemas",
+          period: "abr de 2024 – abr de 2026",
           status: "Cursando",
-          description: "Complementando formação acadêmica"
+          description: "Graduação com foco em arquitetura de computadores, algoritmos, estrutura de dados, programação orientada a objetos, bancos de dados SQL/NoSQL, cloud, inteligência artificial, métodos ágeis e desenvolvimento web/mobile."
         }
       ]
     },
@@ -181,7 +211,7 @@ export const portfolioData = {
       title: "About Me",
       description: "Full Stack Developer focused on modern technologies and development best practices. Experience in projects from front-end to back-end, always seeking clean code and efficient solutions.",
       highlights: [
-        "3+ years of web development experience",
+        "4+ years of web development experience",
         "React.js and Node.js specialist",
         "Experience with TypeScript and databases",
         "Knowledge in DevOps and application deployment"
@@ -226,6 +256,7 @@ export const portfolioData = {
     },
     experience: {
       title: "Professional Experience",
+      description: "Here are my main experiences during my developer career.",
       items: [
         {
           company: "Freelancer",
@@ -237,6 +268,21 @@ export const portfolioData = {
             "Implementation of responsive interfaces with React",
             "Integration with PostgreSQL databases"
           ]
+        },
+        {
+          company: "Driven Projects",
+          position: "Web Fullstack Developer",
+          period: "Apr 2023 – May 2024"
+        },
+        {
+          company: "IT Works S/A",
+          position: "Fullstack Developer",
+          period: "May 2024 – Present"
+        },
+        {
+          company: "Lugenius",
+          position: "Fullstack Developer",
+          period: "June 2025 – Present"
         }
       ]
     },
@@ -258,21 +304,35 @@ export const portfolioData = {
       ]
     },
     education: {
-      title: "Education",
+      title: "Academic Background",
       items: [
         {
-          institution: "Driven Education",
-          course: "Full Stack Development Bootcamp",
-          period: "2021",
+          institution: "Free Programming Courses",
+          course: "Self-taught Development Training",
+          period: "2020 - 2022",
           status: "Completed",
-          description: "Intensive training in modern web development"
+          description: "Participated in various online courses and bootcamps, focusing on programming logic, algorithms, data structures, web fundamentals, REST APIs, databases and development best practices. Improved skills in JavaScript, TypeScript, React, Node.js and Git."
+        },
+          {
+        institution: "FIAP",
+        course: "Software Engineering",
+        period: "Jan 2023 – Dec 2023",
+        status: "Locked",
+        description: "Undergraduate studies focused on modern programming languages, web development, cybersecurity, data manipulation, Python, Java, C#, agile methodologies, and cloud solutions. Covered topics such as OOP, blockchain, metaverse, digital solutions, and Quality Assurance. Course paused in December 2023."
         },
         {
-          institution: "University",
-          course: "Ongoing Higher Education",
-          period: "In progress",
-          status: "Studying",
-          description: "Complementing academic education"
+          institution: "Driven Education",
+          course: "Software Engineering",
+          period: "Apr 2023 – Dec 2023",
+          status: "Completed",
+          description: "Intensive training (+1200h) with practical projects in React, Node.js, TypeScript and Prisma. Deepened software engineering fundamentals, agile methodologies, testing, DevOps and relational/non-relational databases."
+        },
+        {
+          institution: "Wyden",
+          course: "Bachelor's in Systems Analysis and Development",
+          period: "Apr 2024 – Apr 2026",
+          status: "In Progress",
+          description: "Degree focused on computer architecture, algorithms, data structures, object-oriented programming, SQL/NoSQL databases, cloud computing, artificial intelligence, agile methods and web/mobile development."
         }
       ]
     },
