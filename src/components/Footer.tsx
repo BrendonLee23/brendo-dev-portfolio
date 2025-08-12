@@ -9,8 +9,8 @@ export const Footer = () => {
         <div className="text-center">
           <p className="text-muted-foreground text-sm">
             {language === 'pt' 
-              ? '© 2024 Brendo Moreira. Todos os direitos reservados.'
-              : '© 2024 Brendo Moreira. All rights reserved.'
+              ? `© ${new Date().getFullYear()} Brendo Moreira. Todos os direitos reservados.`
+              : `© ${new Date().getFullYear()} Brendo Moreira. All rights reserved.`
             }
           </p>
           <p className="text-muted-foreground text-xs mt-2 font-mono">
