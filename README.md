@@ -1,73 +1,152 @@
-# Welcome to your Lovable project
+# Portfólio Brendo Moreira
 
-## Project info
+Portfólio profissional desenvolvido em React, TypeScript e Tailwind CSS, apresentando experiências, projetos, habilidades e formas de contato. O projeto é responsivo, moderno e multilíngue (português/inglês).
 
-**URL**: https://lovable.dev/projects/45217c8c-5c7f-4c45-b46c-45ecc62eaf91
+## Demonstração
 
-## How can I edit this code?
+Acesse em: [https://brendo-dev-portifolio.vercel.app/](https://brendo-dev-portifolio.vercel.app/)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Índice
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/45217c8c-5c7f-4c45-b46c-45ecc62eaf91) and start prompting.
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação e Uso](#instalação-e-uso)
+- [Scripts Disponíveis](#scripts-disponíveis)
+- [Testes](#testes)
+- [Deploy](#deploy)
+- [Estrutura de Pastas](#estrutura-de-pastas)
+- [Personalização](#personalização)
+- [Licença](#licença)
+- [Contato](#contato)
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Funcionalidades
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Apresentação profissional com foto, bio e currículo para download
+- Seção de habilidades técnicas categorizadas
+- Experiências profissionais e formação acadêmica
+- Principais projetos com tecnologias e destaques
+- Serviços oferecidos
+- Formulário de contato funcional
+- Suporte a temas claro/escuro
+- Multilíngue: português e inglês
+- Design responsivo e animações suaves
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## Tecnologias Utilizadas
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Jest](https://jestjs.io/) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) (testes)
+- [Vercel](https://vercel.com/) (deploy)
+
+---
+
+## Instalação e Uso
+
+**Pré-requisitos:**  
+- Node.js 18+  
+- npm
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone o repositório
+git clone <URL_DO_REPO>
+cd brendo-dev-portfolio
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Instale as dependências
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Rode o projeto em modo desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Acesse [http://localhost:5173](http://localhost:5173) no navegador.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## Scripts Disponíveis
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- `npm run dev` — inicia o servidor de desenvolvimento
+- `npm run build` — gera build de produção
+- `npm run preview` — visualiza build de produção localmente
+- `npm run test` — executa os testes unitários
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## Testes
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Os testes estão localizados na pasta [`tests/`](tests/).  
+Exemplo de teste do formulário de contato: [`ContactSheet.test.tsx`](tests/ContactSheet.test.tsx).
 
-## How can I deploy this project?
+Para rodar os testes:
 
-Simply open [Lovable](https://lovable.dev/projects/45217c8c-5c7f-4c45-b46c-45ecc62eaf91) and click on Share -> Publish.
+```sh
+npm run test
+```
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## Deploy
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+O deploy pode ser feito facilmente no [Vercel](https://vercel.com/) ou em qualquer serviço que suporte projetos React/Vite.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Deploy no Vercel
+
+1. Faça login em [vercel.com](https://vercel.com/)
+2. Clique em "New Project" e importe este repositório
+3. Siga as instruções e publique
+
+---
+
+## Estrutura de Pastas
+
+```
+├── public/                # Arquivos estáticos (imagens, favicon, PDF)
+├── src/
+│   ├── assets/            # Imagens e recursos
+│   ├── components/        # Componentes reutilizáveis (ex: ContactSheet)
+│   ├── contexts/          # Contextos React (ex: LanguageContext)
+│   ├── data/              # Dados do portfólio (ex: portfolio.ts)
+│   ├── hooks/             # Hooks customizados
+│   ├── lib/               # Funções utilitárias
+│   ├── pages/             # Páginas principais
+│   ├── App.tsx            # Componente raiz
+│   ├── index.css          # Estilos globais (Tailwind + customizações)
+│   └── main.tsx           # Entry point
+├── tests/                 # Testes unitários
+├── index.html             # HTML principal
+├── tailwind.config.ts     # Configuração do Tailwind
+├── vite.config.ts         # Configuração do Vite
+└── README.md              # Este arquivo
+```
+
+---
+
+## Personalização
+
+- **Dados do portfólio:**  
+  Edite [`src/data/portfolio.ts`](src/data/portfolio.ts) para alterar textos, experiências, projetos, serviços, etc.
+- **Cores e temas:**  
+  Personalize variáveis CSS em [`src/index.css`](src/index.css).
+- **Imagens:**  
+  Substitua arquivos em [`public/`](public/) e [`src/assets/`](src/assets/).
+
+---
+
+## Licença
+
+Consulte o arquivo `LICENSE` para mais detalhes.
+
+---
+
+## Contato
+
+- **E-mail:** brendo.business1@gmail.com
+- **LinkedIn:** [linkedin.com/in/brendo-moreira](https://linkedin.com/in/brendo-moreira)
