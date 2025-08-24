@@ -1,11 +1,20 @@
 // Dados do portfólio em múltiplos idiomas
+import driviagens from '@/assets/driviagens-image.png'; // importa a imagem
+import climaAtual from '@/assets/clima-image.png';
+import casaAposta from '@/assets/apostas-image.jpeg';
+import doceImage from '@/assets/doce-image.jpg';
+import portifolioImage from '@/assets/portfolio-image.jpg';
+import belfortImage from '@/assets/belfort-image.jpg';
+import memoryImage from '@/assets/memory-image.png';
+import brendo2Image from '@/assets/brendo2-image.jpg';
+
 export const portfolioData = {
   pt: {
     nav: {
       home: "Início",
       about: "Sobre",
       skills: "Habilidades",
-      services: "Serviços", // Adicione aqui
+      services: "Serviços",
       experience: "Experiência",
       projects: "Projetos",
       education: "Formação",
@@ -102,17 +111,156 @@ export const portfolioData = {
       title: "Projetos Principais",
       items: [
         {
-          name: "Driven.T",
-          description: "Sistema completo de gerenciamento de eventos com inscrições, check-in e pagamentos online.",
-          technologies: ["React.js", "Node.js", "TypeScript", "PostgreSQL", "Prisma", "JWT"],
-          highlights: ["Sistema de pagamentos integrado", "Dashboard administrativo", "API RESTful completa"]
-        },
-        {
-          name: "Driviagens",
+          name: "Viagens Aéreas API",
           description: "Plataforma de reservas de viagens com sistema de busca avançada e gestão de reservas.",
           technologies: ["React.js", "Node.js", "TypeScript", "MongoDB", "Express.js"],
-          highlights: ["Sistema de busca inteligente", "Interface intuitiva", "Gestão completa de reservas"]
-        }
+          highlights: ["Sistema de busca inteligente", "Interface intuitiva", "Gestão completa de reservas"],
+          image: driviagens,
+          repository: "https://github.com/BrendonLee23/viagens-aereas-API"
+        },
+        {
+          name: "Clima Atual",
+          description: "Aplicação responsiva que exibe relatório meteorológico atual e detalhado a partir da busca por cidade, estado ou país.",
+          technologies: ["React.js", "TypeScript", "Vite", "Styled-Components", "Axios", "OpenWeather API", "Geolocalização"],
+          highlights: [
+            "Busca por localização (cidade / estado / país)",
+            "Detecção de geolocalização",
+            "Interface responsiva",
+            "Consumo de API externa (OpenWeather)",
+            "Deploy na Vercel"
+          ],
+          image: climaAtual,
+          deploy: "https://project-good-weather-frontend.vercel.app/",
+          repository: "https://github.com/Brendonlee23/project-good-weather-frontend"
+        },
+        {
+          name: "Casa de Apostas API",
+          description: "API REST para apostas esportivas, desenvolvida com TypeScript, Node.js, Express e Prisma. Permite cadastro de participantes, jogos e apostas, com integração ao banco de dados Postgres e testes automatizados.",
+          technologies: [
+            "TypeScript",
+            "Node.js",
+            "Express",
+            "Prisma ORM",
+            "PostgreSQL",
+            "Jest",
+            "Supertest"
+          ],
+          highlights: [
+            "Cadastro de participantes, jogos e apostas",
+            "Controle de saldo e cálculo de ganhos",
+            "Testes automatizados",
+            "Deploy gratuito no Render"
+          ],
+          image: casaAposta,
+          deploy: "https://desafio-tecnico-api-7q98.onrender.com/",
+          repository: "https://github.com/BrendonLee23/casa-de-apostas-API"
+        },
+        {
+          name: "Loja de Doce - Laboleria API",
+          description: "API para gerenciar pedidos de bolos na confeitaria Laboleria. Permite cadastro de bolos, clientes, pedidos, listagem e controle de entrega. Desenvolvida com Node.js e PostgreSQL.",
+          technologies: [
+            "Node.js",
+            "PostgreSQL",
+            "Express.js"
+          ],
+          highlights: [
+            "Cadastro e listagem de bolos",
+            "Gestão de clientes e pedidos",
+            "Controle de entrega dos pedidos"
+          ],
+          image: doceImage,
+          repository: "https://github.com/BrendonLee23/sweet-shop-laboleria-API"
+        },
+        {
+          name: "Portfólio Web",
+          description: "Site portfólio profissional desenvolvido em React, TypeScript e Tailwind CSS. Apresenta experiências, projetos, habilidades e contato, com design responsivo, suporte a temas claro/escuro e multilíngue.",
+          technologies: [
+            "React.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Vite",
+            "shadcn/ui"
+          ],
+          highlights: [
+            "Design responsivo e moderno",
+            "Multilíngue (português/inglês)",
+            "Formulário de contato funcional",
+            "Currículo para download",
+            "Deploy automático na Vercel"
+          ],
+          image: portifolioImage,
+          deploy: "https://brendo-dev-portifolio.vercel.app/",
+          repository: "https://github.com/BrendonLee23/brendo-dev-portfolio"
+        },
+        {
+          name: "Jogo da memória",
+          description: "Jogo da memória online desenvolvido com Next.js, React e Tailwind CSS. Interface responsiva, animações suaves e lógica de jogo dinâmica. Permite jogar no navegador, com embaralhamento automático das cartas e contagem de movimentos.",
+          technologies: [
+            "Next.js",
+            "React.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Framer Motion"
+          ],
+          highlights: [
+            "Interface responsiva e intuitiva",
+            "Animações suaves",
+            "Contador de movimentos",
+            "Embaralhamento automático",
+            "Deploy na Vercel"
+          ],
+          image: memoryImage,
+          deploy: "https://memory-card-game-three-pied.vercel.app/",
+          repository: "https://github.com/BrendonLee23/memory-card-game"
+        },
+        {
+          name: "Belfort Healthcare SaaS",
+          description: "Landing page institucional para a Belfort Healthcare, referência em representação e distribuição de produtos hospitalares. Site moderno, responsivo, web e mobile, com suporte a temas claro/escuro, animações e arquitetura componentizada.",
+          technologies: [
+            "Next.js 15",
+            "React 18",
+            "TypeScript",
+            "Tailwind CSS",
+            "Framer Motion",
+            "Radix UI",
+            "Lucide Icons",
+            "Next Themes",
+            "ESLint + Prettier",
+            "Vercel"
+          ],
+          highlights: [
+            "Design moderno e responsivo",
+            "Multilíngue (PT/EN)",
+            "Dark/light mode",
+            "Animações sofisticadas",
+            "Deploy automático na Vercel"
+          ],
+          image: belfortImage,
+          deploy: "https://belfort-project.vercel.app/",
+          repository: "https://github.com/BrendonLee23/belfort-project"
+        },
+        {
+          name: "Meu Portfolio Pessoal",
+          description: "Portfólio pessoal desenvolvido com Next.js, TailwindCSS e bibliotecas modernas de UI. Apresenta experiências, projetos, habilidades, estatísticas e formas de contato de maneira interativa e responsiva.",
+          technologies: [
+            "Next.js",
+            "React",
+            "TailwindCSS",
+            "Framer Motion",
+            "Radix UI",
+            "EmailJS",
+            "React Icons",
+            "Swiper"
+          ],
+          highlights: [
+            "Página inicial com apresentação e estatísticas",
+            "Navegação responsiva (desktop e mobile)",
+            "Listagem de projetos com links para repositórios",
+          ],
+          image: brendo2Image,
+          deploy: "https://portfolio-dev-zeta-ten.vercel.app/",
+          repository: "https://github.com/BrendonLee23/my-portfolio"
+        },
       ]
     },
     education: {
@@ -290,17 +438,156 @@ export const portfolioData = {
       title: "Main Projects",
       items: [
         {
-          name: "Driven.T",
-          description: "Complete event management system with registrations, check-in and online payments.",
-          technologies: ["React.js", "Node.js", "TypeScript", "PostgreSQL", "Prisma", "JWT"],
-          highlights: ["Integrated payment system", "Administrative dashboard", "Complete RESTful API"]
-        },
-        {
-          name: "Driviagens", 
+          name: "Air Travel API",
           description: "Travel booking platform with advanced search system and reservation management.",
           technologies: ["React.js", "Node.js", "TypeScript", "MongoDB", "Express.js"],
-          highlights: ["Smart search system", "Intuitive interface", "Complete reservation management"]
-        }
+          highlights: ["Smart search system", "Intuitive interface", "Complete reservation management"],
+          image: driviagens,
+          repository: "https://github.com/BrendonLee23/viagens-aereas-API"
+        },
+        {
+          name: "Current Weather",
+          description: "Responsive application that shows current and detailed weather report by searching a city, state or country.",
+          technologies: ["React.js", "TypeScript", "Vite", "Styled-Components", "Axios", "OpenWeather API", "Geolocation"],
+            highlights: [
+              "Location search (city / state / country)",
+              "Geolocation detection",
+              "Responsive UI",
+              "External API consumption (OpenWeather)",
+              "Deployed on Vercel"
+            ],
+          image: climaAtual,
+          deploy: "https://project-good-weather-frontend.vercel.app/",
+          repository: "https://github.com/Brendonlee23/project-good-weather-frontend"
+        },    
+        {
+          name: "Betting House API",
+          description: "REST API for sports betting, built with TypeScript, Node.js, Express and Prisma. Allows registration of participants, games and bets, with PostgreSQL integration and automated tests.",
+          technologies: [
+            "TypeScript",
+            "Node.js",
+            "Express",
+            "Prisma ORM",
+            "PostgreSQL",
+            "Jest",
+            "Supertest"
+          ],
+          highlights: [
+            "Participants, games and bets registration",
+            "Balance control and winnings calculation",
+            "Automated tests",
+            "Free deploy on Render"
+          ],
+          image: casaAposta,
+          deploy: "https://desafio-tecnico-api-7q98.onrender.com/",
+          repository: "https://github.com/BrendonLee23/casa-de-apostas-API"
+        },
+        {
+          name: "Sweet Shop - Laboleria API",
+          description: "API to manage cake orders for Laboleria sweet shop. Allows registering cakes, clients, orders, listing and delivery control. Built with Node.js and PostgreSQL.",
+          technologies: [
+            "Node.js",
+            "PostgreSQL",
+            "Express.js"
+          ],
+          highlights: [
+            "Cake registration and listing",
+            "Client and order management",
+            "Order delivery control"
+          ],
+          image: doceImage,
+          repository: "https://github.com/BrendonLee23/sweet-shop-laboleria-API"
+        },
+        {
+          name: "Portfolio Web",
+          description: "Professional portfolio website built with React, TypeScript and Tailwind CSS. Showcases experience, projects, skills and contact, with responsive design, dark/light theme support and multilingual interface.",
+          technologies: [
+            "React.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Vite",
+            "shadcn/ui"
+          ],
+          highlights: [
+            "Modern responsive design",
+            "Multilingual (Portuguese/English)",
+            "Functional contact form",
+            "Downloadable CV",
+            "Automatic deploy on Vercel"
+          ],
+          image: portifolioImage,
+          deploy: "https://brendo-dev-portifolio.vercel.app/",
+          repository: "https://github.com/BrendonLee23/brendo-dev-portfolio"
+        },
+        {
+          name: "Memory Card Game",
+          description: "Online memory card game built with Next.js, React and Tailwind CSS. Responsive interface, smooth animations and dynamic game logic. Play in the browser with automatic card shuffling and move counter.",
+          technologies: [
+            "Next.js",
+            "React.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Framer Motion"
+          ],
+          highlights: [
+            "Responsive and intuitive UI",
+            "Smooth animations",
+            "Move counter",
+            "Automatic shuffling",
+            "Deployed on Vercel"
+          ],
+          image: memoryImage,
+          deploy: "https://memory-card-game-three-pied.vercel.app/",
+          repository: "https://github.com/BrendonLee23/memory-card-game"
+        },
+        {
+          name: "Belfort Healthcare SaaS",
+          description: "Institutional landing page for Belfort Healthcare, a reference company in representation and distribution of hospital products. Modern, responsive website (web and mobile), with dark/light mode, animations and component architecture.",
+          technologies: [
+            "Next.js 15",
+            "React 18",
+            "TypeScript",
+            "Tailwind CSS",
+            "Framer Motion",
+            "Radix UI",
+            "Lucide Icons",
+            "Next Themes",
+            "ESLint + Prettier",
+            "Vercel"
+          ],
+          highlights: [
+            "Modern and responsive design",
+            "Multilingual (PT/EN)",
+            "Dark/light mode",
+            "Sophisticated animations",
+            "Automatic deploy on Vercel"
+          ],
+          image: belfortImage,
+          deploy: "https://belfort-project.vercel.app/",
+          repository: "https://github.com/BrendonLee23/belfort-project"
+        },
+        {
+          name: "Personal Portfolio",
+          description: "Personal portfolio built with Next.js, TailwindCSS and modern UI libraries. Showcases experience, projects, skills, stats and contact in an interactive and responsive way.",
+          technologies: [
+            "Next.js",
+            "React",
+            "TailwindCSS",
+            "Framer Motion",
+            "Radix UI",
+            "EmailJS",
+            "React Icons",
+            "Swiper"
+          ],
+          highlights: [
+            "Home page with presentation and stats",
+            "Responsive navigation (desktop and mobile)",
+            "Project listing with repository links",
+          ],
+          image: brendo2Image,
+          deploy: "https://portfolio-dev-zeta-ten.vercel.app/",
+          repository: "https://github.com/BrendonLee23/my-portfolio"
+        },
       ]
     },
     education: {

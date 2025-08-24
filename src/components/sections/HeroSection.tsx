@@ -4,6 +4,7 @@ import { Download, Mail, Github, Linkedin } from 'lucide-react';
 import { Typewriter } from 'react-simple-typewriter';
 import { useState } from "react";
 import { ContactSheet } from '../contactSheet';
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu";
 
 export const HeroSection = () => {
   const { data } = useLanguage();
@@ -51,18 +52,26 @@ export const HeroSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="gradient" size="lg">
-              <a
-                href="/public/brendo-cv.pdf"
-                download
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center"
-              >
-                <Download className="mr-2 h-4 w-4" />
-                {data.hero.downloadCV}
-              </a>
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="gradient" size="lg" className='hover:opacity-70'>
+                  <Download className="mr-2 h-4 w-4" />
+                  {data.hero.downloadCV}
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start">
+                <DropdownMenuItem
+                  onClick={() => window.open("/brendo-cv.pdf", "_blank")}
+                >
+                  Português
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => window.open("/brendo-cv-english.pdf", "_blank")}
+                >
+                  English
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <Button
               variant="outline"
               size="lg"
@@ -75,6 +84,8 @@ export const HeroSection = () => {
               {data.hero.contactMe}
             </Button>
           </div>
+
+
           
           {/* Social Links */}
           <div className="flex justify-center space-x-6">

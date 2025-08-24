@@ -27,6 +27,7 @@ import { BsFiletypeSql } from "react-icons/bs";
 import { FaPython } from "react-icons/fa6";
 import { TbBrandCSharp } from "react-icons/tb";
 import { ServicesSection } from '@/components/sections/ServicesSection';
+import { ProjectsCarousel } from '@/components/sections/ProjectsCarousel';
 
 const skillsIcons = [
   { icon: FaHtml5, name: "HTML 5" },
@@ -80,7 +81,7 @@ const Index = () => {
             <MarqueeRow icons={skillsIcons} direction="left" speed={80} gapPx={30} />
             <SkillsSection />
             <ExperienceSection />
-            <ProjectsSection />
+            <ProjectsCarousel />
             <EducationSection />
             <ContactSection />
           </main>
