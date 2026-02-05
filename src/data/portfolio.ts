@@ -7,6 +7,7 @@ import portifolioImage from '@/assets/portfolio-image.jpg';
 import belfortImage from '@/assets/belfort-image.jpg';
 import memoryImage from '@/assets/memory-image.png';
 import brendo2Image from '@/assets/brendo2-image.jpg';
+import sensorImage from '@/assets/sensor-image.png';
 
 export const portfolioData = {
   pt: {
@@ -260,6 +261,28 @@ export const portfolioData = {
           image: brendo2Image,
           deploy: "https://portfolio-dev-zeta-ten.vercel.app/",
           repository: "https://github.com/BrendonLee23/my-portfolio"
+        },
+        {
+          name: "Monitoramento de Sensores",
+          description: "Sistema completo de monitoramento sensorial em tempo real com alertas automáticos por email. Dashboard interativo para gestão de sensores industriais e análise de leituras.",
+          technologies: [
+            "ASP.NET Core",
+            "React.js",
+            "TypeScript",
+            "PostgreSQL",
+            "TanStack Query",
+            "Tailwind CSS"
+          ],
+          highlights: [
+            "Dashboard com atualização a cada 15s",
+            "Alertas inteligentes via email",
+            "Gestão completa de sensores e setores",
+            "Histórico detalhado de leituras",
+            "Simulador de leituras em lote"
+          ],
+          image: sensorImage,
+          deploy: "https://sensorpulse-monitor.vercel.app/",
+          repository: "https://github.com/BrendonLee23/monitoring-sensors-api"
         },
       ]
     },
@@ -587,6 +610,28 @@ export const portfolioData = {
           image: brendo2Image,
           deploy: "https://portfolio-dev-zeta-ten.vercel.app/",
           repository: "https://github.com/BrendonLee23/my-portfolio"
+        },
+        {
+          name: "Sensor Monitoring System",
+          description: "Complete real-time sensor monitoring system with automatic email alerts. Interactive dashboard for industrial sensor management and reading analysis.",
+          technologies: [
+            "ASP.NET Core",
+            "React.js",
+            "TypeScript",
+            "PostgreSQL",
+            "TanStack Query",
+            "Tailwind CSS"
+          ],
+          highlights: [
+            "Dashboard with 15s auto-refresh",
+            "Intelligent email alerts",
+            "Complete sensor and sector management",
+            "Detailed reading history",
+            "Batch reading simulator"
+          ],
+          image: sensorImage,
+          deploy: "https://sensorpulse-monitor.vercel.app/",
+          repository: "https://github.com/BrendonLee23/monitoring-sensors-api"
         },
       ]
     },
